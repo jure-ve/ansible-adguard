@@ -28,7 +28,7 @@
     regexp: "#DNSStubListener=yes"
     line: "DNSStubListener=no"
 
-- name: Restart service httpd, in all cases
+- name: Restart service resolved, in all cases
   ansible.builtin.service:
     name: systemd-resolved
     state: restarted
